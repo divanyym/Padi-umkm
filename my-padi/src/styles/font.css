@@ -1,0 +1,49 @@
+@font-face {
+    font-display: swap;
+    font-style: normal;
+    src: url("/public/fonts/OpenSansRegular.tff");
+    font-family: "Open Sans";
+    font-weight: 400;
+}
+@font-face {
+    font-display: swap;
+    font-style: normal;
+    src: url("/public/fonts/UbuntuMedium.tff");
+    font-family: "Ubuntu";
+    font-weight: 500;
+}
+@font-face {
+    font-display: swap;
+    font-style: normal;
+    src: url("/public/fonts/UbuntuRegular.tff");
+    font-family: "Ubuntu";
+    font-weight: 400;
+}
+@font-face {
+    font-display: swap;
+    font-style: normal;
+    src: url("/public/fonts/UbuntuBold.tff");
+    font-family: "Ubuntu";
+    font-weight: 600;
+}
+@font-face {
+    font-display: swap;
+    font-style: normal;
+    src: url("/public/fonts/OpenSansSemiBold.tff");
+    font-family: "Open Sans";
+    font-weight: 700;
+}
+@font-face {
+    font-display: swap;
+    font-style: normal;
+    src: url("/public/fonts/OpenSansBold.tff");
+    font-family: "Open Sans";
+    font-weight: 400;
+}
+@font-face {
+    font-display: swap;
+    font-style: normal;
+    src: url("/public/fonts/PoppinsBold.tff");
+    font-family: "Poppins";
+    font-weight: 400;
+}
