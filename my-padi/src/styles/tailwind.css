@@ -20,7 +20,7 @@ textarea,
 select {
   appearance: none;
   background-color: transparent;
-  border-color: unset;
+  border-color: #de3d3d;
   border-width: 0;
   border-radius: unset;
   padding: unset;
@@ -42,7 +42,8 @@ select:focus {
   --tw-ring-color: transparent;
   border-color: transparent;
 }
-[type="radio"]:focus
+
+[type="radio"]:focus,
 [type="checkbox"]:focus {
   --tw-ring-color: transparent;
 }
@@ -50,14 +51,43 @@ select:focus {
 li:focus-visible {
   outline: none;
 }
+
 li:hover {
   cursor: pointer;
 }
-@layer components  {
+
+@layer components {
   /*---------------------------------
   Container CSS
------------------------------------*/
+  -----------------------------------*/
   .container-xs {
-    @apply w-full mx-auto max-w[1366px];
+    @apply w-full mx-auto max-w-[1366px];
+  }
+}
+
+@layer components {
+  /* Mitra PaDi UMKM */
+  .mitra-text {
+    @apply text-[#808c92] text-xs font-normal font-['Open_Sans'] leading-[18px];
+  }
+
+  /* Menjadi Penjual */
+  .penjual-text {
+    @apply text-[#808c92] text-xs font-normal font-['Open_Sans'] leading-[18px];
+  }
+
+  /* Info */
+  .info-text {
+    @apply text-[#808c92] text-xs font-normal font-['Open_Sans'] leading-[18px];
+  }
+
+  /* Pusat Bantuan */
+  .bantuan-text {
+    @apply text-[#808c92] text-xs font-normal font-['Open_Sans'] leading-[18px];
+  }
+
+  /* Bahasa */
+  .bahasa-text {
+    @apply text-[#808c92] text-xs font-normal font-['Open_Sans'] leading-[18px];
   }
 }

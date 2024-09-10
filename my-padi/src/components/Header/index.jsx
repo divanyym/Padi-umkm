@@ -1,5 +1,5 @@
 import { CloseSVG } from "../input/close.jsx";
-import MegaMenu1 from "./MegaMenu1";
+import MegaMenu1 from "../MegaMenu1";
 import { Button, Input, Img, Text } from "./..";
 import React from "react";
 

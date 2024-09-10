@@ -13,7 +13,7 @@ import {
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 import ProductDetail from "../../components/ProductDetail";
-import PaDiUMKMSection from "../../components/PaDiUMKMSection";
+import PaDiUMKMSection from "./PaDiUMKMSection";
 import React, { Suspense } from "react";
 import {TabPanel, TabList, Tab, Tabs} from "react-tabs";
 
@@ -1681,7 +1681,7 @@ export default function LandingPage() {
                 ))}
                 <div className="mt-5 grid grid-cols-5 justify-center gap-5 gap-y-[18px] self-stretch md:grid-cols-3 sm:grid-col-1">
                   <Suspense fallback={<div>Loading feed...</div>}>
-                    {productCardsGrid7.map((d, index) => (
+                    {productCardsGrid.map((d, index) => (
                       <ProductDetail {...d} key={"landing" + index} />
                     ))}
                   </Suspense>
