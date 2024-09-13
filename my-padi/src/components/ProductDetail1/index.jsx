@@ -1,7 +1,7 @@
 import { Text, Img, Heading } from "./..";
 import React from "react";
 
-export default function ProductDetail({
+export default function ProductDetail1({
   productLabel = "UMKM",
   productName = "Service Laptop Asus, Lenovo, MSI, Apple",
   productPrice = "Rp2.000.000",
@@ -12,10 +12,20 @@ export default function ProductDetail({
   ...props
 }) {
   return (
-    <div {...props} className={`${props.className} flex flex-col items-center w-[20%] md:w-full border-gray-300_01 border-[0.5px] border-solid bg-white-a700 shadow-xs rounded-lg`}>
+    <div
+      {...props}
+      className={`${props.className} flex flex-col items-center w-[20%] md:w-full border-gray-300_01 border-[0.5px] border-solid bg-white-a700 shadow-xs rounded-lg transition-transform transform hover:scale-105 hover:shadow-lg hover:border-cyan-500`}
+    >
       <div className="flex flex-col items-start self-stretch">
-        <Img src="images/img_image_61.png" alt="Umkm Image" className="h-[150px] w-full object-cover" />
-        <Text as="p" className="relative mt-[-16px] flex items-center justify-center rounded-tr bg-cyan-700 p-0.5 !text-[10px] !font-medium !text-gray-50_02">
+        <Img
+          src="images/img_image_61.png"
+          alt="Umkm Image"
+          className="h-[150px] w-full object-cover"
+        />
+        <Text
+          as="p"
+          className="relative mt-[-16px] flex items-center justify-center rounded-tr bg-cyan-700 p-0.5 !text-[10px] !font-medium !text-gray-50_02"
+        >
           {productLabel}
         </Text>
       </div>
@@ -30,11 +40,19 @@ export default function ProductDetail({
         </div>
         <div className="flex flex-col gap-1">
           <div className="flex items-center">
-            <Img src="images/img_map_pin.svg" alt="Location Icon" className="h-[12px] w-[12px]" />
+            <Img
+              src="images/img_map_pin.svg"
+              alt="Location Icon"
+              className="h-[12px] w-[12px]"
+            />
             <Text as="p">{locationText}</Text>
           </div>
           <div className="flex items-center">
-            <Img src="images/img_star.svg" alt="Star Icon" className="h-[12px] w-[12px]" />
+            <Img
+              src="images/img_star.svg"
+              alt="Star Icon"
+              className="h-[12px] w-[12px]"
+            />
             <Text as="p">{ratingText}</Text>
             <div className="ml-1 h-[4px] w-[4px] rounded-sm bg-gray-300" />
             <Text as="p" className="ml-1 !text-cyan-700">
