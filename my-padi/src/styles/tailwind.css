@@ -18,15 +18,15 @@ input:where(:not([type])),
 [multiple],
 textarea,
 select {
-  appearance: none;
+  border-color: none;
   background-color: transparent;
-  border-color: #de3d3d;
   border-width: 0;
-  border-radius: unset;
-  padding: unset;
-  font-size: unset;
+  border-radius: 20px;
+  padding: 10px;
+  font-size: 14px;
   line-height: unset;
 }
+
 
 /*Override default focus color for tailwindcss-forms https://github.com/tailwindslabs/tailwindcss-forms */
 [type="text"]:focus,
@@ -65,29 +65,89 @@ li:hover {
   }
 }
 
+@layer base {
+  :root {
+    /* Color variables */
+    --black_900: #000000;
+    --black_900_1e: #0000001e;
+    --blue_200: #9cb4ff;
+    --blue_50: #e6f4f7;
+    --blue_gray_300: #9fa7bc;
+    --blue_gray_300_01: #8f95b2;
+    --blue_gray_400: #8c9197;
+    --blue_gray_400_01: #808c92;
+    --blue_gray_400_02: #8d8d97;
+    --blue_gray_800: #444b55;
+    --blue_gray_900: #333346;
+    --blue_gray_900_01: #182958;
+    --blue_gray_900_02: #132146;
+    --blue_gray_900_14: #1f293714;
+    --cyan_700: #009ea9;
+    --cyan_700_01: #0092ac;
+    --cyan_800: #007e87;
+    --deep_orange_50: #fde5e4;
+    --gray_100: #f1f3f7;
+    --gray_100_01: #f3f5fc;
+    --gray_200: #ebebed;
+    --gray_300: #ddelec;
+    --gray_300_01: #dee3ed;
+    --gray_300_a2: #dee3eda2;
+    --gray_50: #f3f6ff;
+    --gray_50_01: #f6f9fc;
+    --gray_50_02: #f9fafa;
+    --gray_600: #686e76;
+    --gray_700: #5c5c6b;
+    --green_50: #ddf2e4;
+    --green_50_01: #e5f0e9;
+    --green_800: #157631;
+    --green_800_01: #1e793d;
+    --indigo_600: #3b5998;
+    --indigo_900: #093f7a;
+    --light_blue_500: #00acee;
+    --lime_400: #dab96b;
+    --red_400: #f1594f;
+    --red_600: #e9232a;
+    --red_700: #262129;
+    --teal_100: #99d3de;
+    --teal_300: #4db3c5;
+    --white_a700: #ffffff;
+    --white_a700_a2: #ffffffa2;
+    --yellow_900: #f7931e;
+    --black_600: #656d76;
+    --gray_shadow: #00000029;
+
+    /*------ Shadow variables ------*/
+--shadow-xs: 0 1px 5px 0 #0000001e;
+--shadow-sm: 0 0 13px 5px #00000029;
+
+/*------ Border radius variables ------*/
+--radius-xs: 2px;
+--radius-sm: 4px;
+--radius-md: 8px;
+--radius-lg: 16px;
+--radius-xl: 20px;
+
+/*------ Spacing variables ------*/
+--space-xs: 2px;
+--space-sm: 4px;
+--space-md: 6px;
+--space-lg: 8px;
+--space-xl: 12px;
+--space-2xl: 16px;
+--space-3xl: 20px;
+--space-4xl: 22px;
+--space-5xl: 24px;
+--space-6xl: 28px;
+--space-7xl: 30px;
+--space-8xl: 32px;
+
+}
+  
+}
+
 @layer components {
-  /* Mitra PaDi UMKM */
-  .mitra-text {
-    @apply text-[#808c92] text-xs font-normal font-['Open_Sans'] leading-[18px];
-  }
-
-  /* Menjadi Penjual */
-  .penjual-text {
-    @apply text-[#808c92] text-xs font-normal font-['Open_Sans'] leading-[18px];
-  }
-
-  /* Info */
-  .info-text {
-    @apply text-[#808c92] text-xs font-normal font-['Open_Sans'] leading-[18px];
-  }
-
-  /* Pusat Bantuan */
-  .bantuan-text {
-    @apply text-[#808c92] text-xs font-normal font-['Open_Sans'] leading-[18px];
-  }
-
-  /* Bahasa */
-  .bahasa-text {
-    @apply text-[#808c92] text-xs font-normal font-['Open_Sans'] leading-[18px];
+  /* Container CSS */
+  .container-xs {
+    @apply w-full mx-auto max-w-[1366px];
   }
 }

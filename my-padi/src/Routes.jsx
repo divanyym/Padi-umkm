@@ -1,7 +1,7 @@
 import React from "react";
 import { useRoutes } from "react-router-dom";
-import Home from './pages/Overview/Home';
-import NotFound from "./pages/Overview/NotFound";
+import Home from './pages/Home';
+import NotFound from "./pages/NotFound";
 import Landing from "./pages/Landing/index";  // Mengasumsikan Landing memiliki file index.jsx yang valid
 
 const ProjectRoutes = () => {

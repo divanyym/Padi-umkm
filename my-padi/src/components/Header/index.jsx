@@ -70,18 +70,18 @@ export default function Header({ ...props }) {
       <div className="flex flex-col items-center gap-2 self-stretch">
         <div className="container-xs mt-2 md:px-5">
           <div className="flex items-center justify-center gap-6 md:flex-col">
-            <Img src="images/img_header_logo.svg" alt="Main Logo" className="h-[54px] w-[98px] object-contain" />
+            <Img src="images/img_header_logo.svg" alt="Main Logo" className="h-[48px] w-[90px] object-contain ml-4" />
             <div className="flex flex-1 items-center justify-between gap-5 md:flex-col md:self-stretch">
               <div className="flex items-center gap-1">
-                <a href="#">
-                  <Img src="images/img_grid.svg" alt="Category Grid" className="h-[16px] w-[16px]" />
+                <a href="#" class="flex items-center space-x-2">
+                  <Img src="images/img_grid.svg" alt="Category Grid" className="h-[14px] w-[14px]" />
                   <Text size="texts" as="p" className="self-end !text-[14px] !font-medium !text-gray-600">
                     Kategori
                   </Text>
                 </a>
               </div>
               <Input
-                size="xs"
+                size="normal"
                 shape="round"
                 name="Search Field"
                 placeholder="Cari produk, jasa, atau vendor"
